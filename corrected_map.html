@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_714fe1bb04136dd525d81186b309be09 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-minimap/3.6.1/Control.MiniMap.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-minimap/3.6.1/Control.MiniMap.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_714fe1bb04136dd525d81186b309be09" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_714fe1bb04136dd525d81186b309be09 = L.map(
+                "map_714fe1bb04136dd525d81186b309be09",
+                {
+                    center: [52.37, 4.89],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 13,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_1bae92177c78858ff62aad910068a4db = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_1bae92177c78858ff62aad910068a4db.addTo(map_714fe1bb04136dd525d81186b309be09);
+        
+    
+            var marker_bf23940c5c2c9f020c74b8d575504012 = L.marker(
+                [52.367036310510265, 4.897004645264395],
+                {
+}
+            ).addTo(map_714fe1bb04136dd525d81186b309be09);
+        
+    
+            var icon_bdb2be70ee19aed9d3c39558426322d7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c58e57e537fb30b1b429d917eb7b957c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d51c815708a9da310f2f83f99caee6cc = $(`<div id="html_d51c815708a9da310f2f83f99caee6cc" style="width: 100.0%; height: 100.0%;">1. 60 Amstel<br>23.09.2024 06:40</div>`)[0];
+                popup_c58e57e537fb30b1b429d917eb7b957c.setContent(html_d51c815708a9da310f2f83f99caee6cc);
+            
+        
+
+        marker_bf23940c5c2c9f020c74b8d575504012.bindPopup(popup_c58e57e537fb30b1b429d917eb7b957c)
+        ;
+
+        
+    
+    
+            marker_bf23940c5c2c9f020c74b8d575504012.bindTooltip(
+                `<div>
+                     1. 60 Amstel
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_bf23940c5c2c9f020c74b8d575504012.setIcon(icon_bdb2be70ee19aed9d3c39558426322d7);
+            
+    
+            var marker_eb4ab3048ec1196b1fc52dd9a0fc5fce = L.marker(
+                [52.367422, 4.895934],
+                {
+}
+            ).addTo(map_714fe1bb04136dd525d81186b309be09);
+        
+    
+            var icon_7344e790ebfd27efe0cf3f214aae43ee = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_670d47b30e6eded0adc17074392240ef = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a05989f197b41704fe21208d45650fc1 = $(`<div id="html_a05989f197b41704fe21208d45650fc1" style="width: 100.0%; height: 100.0%;">2. Halvemaansbrug<br>23.09.2024 07:04</div>`)[0];
+                popup_670d47b30e6eded0adc17074392240ef.setContent(html_a05989f197b41704fe21208d45650fc1);
+            
+        
+
+        marker_eb4ab3048ec1196b1fc52dd9a0fc5fce.bindPopup(popup_670d47b30e6eded0adc17074392240ef)
+        ;
+
+        
+    
+    
+            marker_eb4ab3048ec1196b1fc52dd9a0fc5fce.bindTooltip(
+                `<div>
+                     2. Halvemaansbrug
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_eb4ab3048ec1196b1fc52dd9a0fc5fce.setIcon(icon_7344e790ebfd27efe0cf3f214aae43ee);
+            
+    
+            var marker_a9e20ebb1e4d0815cbdd2f81db6370dd = L.marker(
+                [52.36775, 4.896611],
+                {
+}
+            ).addTo(map_714fe1bb04136dd525d81186b309be09);
+        
+    
+            var icon_bdeaff0421e393b3aeacbce70e4ef300 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_aa8c99790b32f236db9ff15fc1c0f15b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f91df0de2b0ff46741635bf54bf6e50c = $(`<div id="html_f91df0de2b0ff46741635bf54bf6e50c" style="width: 100.0%; height: 100.0%;">3. 's-Gravelandseveer 6<br>23.09.2024 07:10</div>`)[0];
+                popup_aa8c99790b32f236db9ff15fc1c0f15b.setContent(html_f91df0de2b0ff46741635bf54bf6e50c);
+            
+        
+
+        marker_a9e20ebb1e4d0815cbdd2f81db6370dd.bindPopup(popup_aa8c99790b32f236db9ff15fc1c0f15b)
+        ;
+
+        
+    
+    
+            marker_a9e20ebb1e4d0815cbdd2f81db6370dd.bindTooltip(
+                `<div>
+                     3. 's-Gravelandseveer 6
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_a9e20ebb1e4d0815cbdd2f81db6370dd.setIcon(icon_bdeaff0421e393b3aeacbce70e4ef300);
+            
+    
+            var marker_56f323cfc5dedfd4c8bf37bd7ed2c89c = L.marker(
+                [52.382657, 4.900415],
+                {
+}
+            ).addTo(map_714fe1bb04136dd525d81186b309be09);
+        
+    
+            var icon_fed4ba8ff94b375bee470265a6d06dda = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0c0521c1bffbafeea9aca957454564ce = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_61f2112962dba1014170305feef90b1d = $(`<div id="html_61f2112962dba1014170305feef90b1d" style="width: 100.0%; height: 100.0%;">4. Fähre Central Station – NDSM<br>23.09.2024 12:08</div>`)[0];
+                popup_0c0521c1bffbafeea9aca957454564ce.setContent(html_61f2112962dba1014170305feef90b1d);
+            
+        
+
+        marker_56f323cfc5dedfd4c8bf37bd7ed2c89c.bindPopup(popup_0c0521c1bffbafeea9aca957454564ce)
+        ;
+
+        
+    
+    
+            marker_56f323cfc5dedfd4c8bf37bd7ed2c89c.bindTooltip(
+                `<div>
+                     4. Fähre Central Station – NDSM
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_56f323cfc5dedfd4c8bf37bd7ed2c89c.setIcon(icon_fed4ba8ff94b375bee470265a6d06dda);
+            
+    
+            var marker_6578ff79392e8df60ea611de16f3761b = L.marker(
+                [52.401315279948506, 4.891136017767785],
+                {
+}
+            ).addTo(map_714fe1bb04136dd525d81186b309be09);
+        
+    
+            var icon_e1d85f3689720a74afee65415ba12079 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ea8f2c0f9bc50678d975642e64493b42 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_19134515a50c57568cd2182689406091 = $(`<div id="html_19134515a50c57568cd2182689406091" style="width: 100.0%; height: 100.0%;">5. Nähe Mt. Ondinaweg<br>23.09.2024 12:23</div>`)[0];
+                popup_ea8f2c0f9bc50678d975642e64493b42.setContent(html_19134515a50c57568cd2182689406091);
+            
+        
+
+        marker_6578ff79392e8df60ea611de16f3761b.bindPopup(popup_ea8f2c0f9bc50678d975642e64493b42)
+        ;
+
+        
+    
+    
+            marker_6578ff79392e8df60ea611de16f3761b.bindTooltip(
+                `<div>
+                     5. Nähe Mt. Ondinaweg
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_6578ff79392e8df60ea611de16f3761b.setIcon(icon_e1d85f3689720a74afee65415ba12079);
+            
+    
+            var marker_8a128cec019ba8d1080ef50e5139ce98 = L.marker(
+                [52.400444, 4.89175],
+                {
+}
+            ).addTo(map_714fe1bb04136dd525d81186b309be09);
+        
+    
+            var icon_6da53aad21c8bc16755723fd77a8637a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_17fc385d7c799c4e04007a67e6ea4669 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b8cab52576102ee06cd0d2b3aa50af12 = $(`<div id="html_b8cab52576102ee06cd0d2b3aa50af12" style="width: 100.0%; height: 100.0%;">6. Pancake Boat<br>23.09.2024 13:05</div>`)[0];
+                popup_17fc385d7c799c4e04007a67e6ea4669.setContent(html_b8cab52576102ee06cd0d2b3aa50af12);
+            
+        
+
+        marker_8a128cec019ba8d1080ef50e5139ce98.bindPopup(popup_17fc385d7c799c4e04007a67e6ea4669)
+        ;
+
+        
+    
+    
+            marker_8a128cec019ba8d1080ef50e5139ce98.bindTooltip(
+                `<div>
+                     6. Pancake Boat
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_8a128cec019ba8d1080ef50e5139ce98.setIcon(icon_6da53aad21c8bc16755723fd77a8637a);
+            
+    
+            var marker_c7bf5c62f73c9dfc480a7deab323c13a = L.marker(
+                [52.36706350023699, 4.894792501195321],
+                {
+}
+            ).addTo(map_714fe1bb04136dd525d81186b309be09);
+        
+    
+            var icon_4129e51325b64ec0599bc825a66fe175 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5fdeb11db6f5ab296cf395f14d37d2e7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f5ed7d307c1e93e46dcbef02f1b8bf3c = $(`<div id="html_f5ed7d307c1e93e46dcbef02f1b8bf3c" style="width: 100.0%; height: 100.0%;">7. Amstel 22<br>23.09.2024 22:32</div>`)[0];
+                popup_5fdeb11db6f5ab296cf395f14d37d2e7.setContent(html_f5ed7d307c1e93e46dcbef02f1b8bf3c);
+            
+        
+
+        marker_c7bf5c62f73c9dfc480a7deab323c13a.bindPopup(popup_5fdeb11db6f5ab296cf395f14d37d2e7)
+        ;
+
+        
+    
+    
+            marker_c7bf5c62f73c9dfc480a7deab323c13a.bindTooltip(
+                `<div>
+                     7. Amstel 22
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_c7bf5c62f73c9dfc480a7deab323c13a.setIcon(icon_4129e51325b64ec0599bc825a66fe175);
+            
+    
+            var marker_95c867cf9f11d7ba03023d09a9581b80 = L.marker(
+                [52.37204616762245, 4.89122869180614],
+                {
+}
+            ).addTo(map_714fe1bb04136dd525d81186b309be09);
+        
+    
+            var icon_491eb800bba102775b3e17d599624486 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b13a0807a4d3d14b89f82a096afc90ae = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_82293120871e49d79debca4b32e4ea87 = $(`<div id="html_82293120871e49d79debca4b32e4ea87" style="width: 100.0%; height: 100.0%;">7.5. Jonge Roelensteeg 12<br>23.09.2024 bis ca 17 Uhr</div>`)[0];
+                popup_b13a0807a4d3d14b89f82a096afc90ae.setContent(html_82293120871e49d79debca4b32e4ea87);
+            
+        
+
+        marker_95c867cf9f11d7ba03023d09a9581b80.bindPopup(popup_b13a0807a4d3d14b89f82a096afc90ae)
+        ;
+
+        
+    
+    
+            marker_95c867cf9f11d7ba03023d09a9581b80.bindTooltip(
+                `<div>
+                     7.5. Jonge Roelensteeg 12
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_95c867cf9f11d7ba03023d09a9581b80.setIcon(icon_491eb800bba102775b3e17d599624486);
+            
+    
+            var marker_8fea997c0e36a54615da71f94e0a2314 = L.marker(
+                [52.370234, 4.893569],
+                {
+}
+            ).addTo(map_714fe1bb04136dd525d81186b309be09);
+        
+    
+            var icon_56f31420b24a2450a23c67944b45bd9e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f59184f15cd919328b38c310923ad110 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4485fb9d5109a3905767325f2dc328dc = $(`<div id="html_4485fb9d5109a3905767325f2dc328dc" style="width: 100.0%; height: 100.0%;">8. Rokin<br>23.09.2024 23:10</div>`)[0];
+                popup_f59184f15cd919328b38c310923ad110.setContent(html_4485fb9d5109a3905767325f2dc328dc);
+            
+        
+
+        marker_8fea997c0e36a54615da71f94e0a2314.bindPopup(popup_f59184f15cd919328b38c310923ad110)
+        ;
+
+        
+    
+    
+            marker_8fea997c0e36a54615da71f94e0a2314.bindTooltip(
+                `<div>
+                     8. Rokin
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_8fea997c0e36a54615da71f94e0a2314.setIcon(icon_56f31420b24a2450a23c67944b45bd9e);
+            
+    
+            var marker_3a5c34fd7a1f1b84477e9a87c4d1a83b = L.marker(
+                [52.360833, 4.891111],
+                {
+}
+            ).addTo(map_714fe1bb04136dd525d81186b309be09);
+        
+    
+            var icon_53e8eec1ec5449fe706722fe8c45f2a8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b84e7c8fd556959abf382300bd7ca491 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_50838aa6acd3be04a12f0a4d708a37d0 = $(`<div id="html_50838aa6acd3be04a12f0a4d708a37d0" style="width: 100.0%; height: 100.0%;">9. Vijzelgracht Metrostation<br>23.09.2024 23:16</div>`)[0];
+                popup_b84e7c8fd556959abf382300bd7ca491.setContent(html_50838aa6acd3be04a12f0a4d708a37d0);
+            
+        
+
+        marker_3a5c34fd7a1f1b84477e9a87c4d1a83b.bindPopup(popup_b84e7c8fd556959abf382300bd7ca491)
+        ;
+
+        
+    
+    
+            marker_3a5c34fd7a1f1b84477e9a87c4d1a83b.bindTooltip(
+                `<div>
+                     9. Vijzelgracht Metrostation
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_3a5c34fd7a1f1b84477e9a87c4d1a83b.setIcon(icon_53e8eec1ec5449fe706722fe8c45f2a8);
+            
+    
+            var marker_2c0cfdd081a441c2f88604f839cfd1c9 = L.marker(
+                [52.367389, 4.867139],
+                {
+}
+            ).addTo(map_714fe1bb04136dd525d81186b309be09);
+        
+    
+            var icon_43dadc212d236080a408931da3693701 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_00b6e21b7abc79f1ff4bb1e2c795226a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_dc0a806692bb95b08ea27664e34922d8 = $(`<div id="html_dc0a806692bb95b08ea27664e34922d8" style="width: 100.0%; height: 100.0%;">10. 1 Bellamystraat<br>24.09.2024 00:06</div>`)[0];
+                popup_00b6e21b7abc79f1ff4bb1e2c795226a.setContent(html_dc0a806692bb95b08ea27664e34922d8);
+            
+        
+
+        marker_2c0cfdd081a441c2f88604f839cfd1c9.bindPopup(popup_00b6e21b7abc79f1ff4bb1e2c795226a)
+        ;
+
+        
+    
+    
+            marker_2c0cfdd081a441c2f88604f839cfd1c9.bindTooltip(
+                `<div>
+                     10. 1 Bellamystraat
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_2c0cfdd081a441c2f88604f839cfd1c9.setIcon(icon_43dadc212d236080a408931da3693701);
+            
+    
+            var marker_78b50fd963b4bedd2358722ca768adfb = L.marker(
+                [51.212556, 6.667361],
+                {
+}
+            ).addTo(map_714fe1bb04136dd525d81186b309be09);
+        
+    
+            var icon_99e0a46db9d319438647140234052881 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_254135ae0717a40dc3925fa2e584d993 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4415546d0773c5caa7424daf65be3d09 = $(`<div id="html_4415546d0773c5caa7424daf65be3d09" style="width: 100.0%; height: 100.0%;">11. Neuss, Wilhelmstraße/Venloer Str.<br>24.09.2024 17:15</div>`)[0];
+                popup_254135ae0717a40dc3925fa2e584d993.setContent(html_4415546d0773c5caa7424daf65be3d09);
+            
+        
+
+        marker_78b50fd963b4bedd2358722ca768adfb.bindPopup(popup_254135ae0717a40dc3925fa2e584d993)
+        ;
+
+        
+    
+    
+            marker_78b50fd963b4bedd2358722ca768adfb.bindTooltip(
+                `<div>
+                     11. Neuss, Wilhelmstraße/Venloer Str.
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_78b50fd963b4bedd2358722ca768adfb.setIcon(icon_99e0a46db9d319438647140234052881);
+            
+    
+            var marker_4a74ee1bd4a75d921349ef5274ab4719 = L.marker(
+                [51.198611, 6.691472],
+                {
+}
+            ).addTo(map_714fe1bb04136dd525d81186b309be09);
+        
+    
+            var icon_ee2d37330fba90a37b776796f9f160c0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f600b83c5026f39d79cdf52c52fad1e0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7d792d6ea70e00a97e666cde0f534fbd = $(`<div id="html_7d792d6ea70e00a97e666cde0f534fbd" style="width: 100.0%; height: 100.0%;">12. Rituals Neuss<br>25.09.2024 13:18</div>`)[0];
+                popup_f600b83c5026f39d79cdf52c52fad1e0.setContent(html_7d792d6ea70e00a97e666cde0f534fbd);
+            
+        
+
+        marker_4a74ee1bd4a75d921349ef5274ab4719.bindPopup(popup_f600b83c5026f39d79cdf52c52fad1e0)
+        ;
+
+        
+    
+    
+            marker_4a74ee1bd4a75d921349ef5274ab4719.bindTooltip(
+                `<div>
+                     12. Rituals Neuss
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_4a74ee1bd4a75d921349ef5274ab4719.setIcon(icon_ee2d37330fba90a37b776796f9f160c0);
+            
+    
+            var poly_line_108e4594cd891451b0a821639cba2d41 = L.polyline(
+                [[52.367036310510265, 4.897004645264395], [52.367422, 4.895934], [52.36775, 4.896611], [52.382657, 4.900415], [52.401315279948506, 4.891136017767785], [52.400444, 4.89175], [52.36706350023699, 4.894792501195321], [52.37204616762245, 4.89122869180614], [52.370234, 4.893569], [52.360833, 4.891111], [52.367389, 4.867139], [51.212556, 6.667361], [51.198611, 6.691472]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_714fe1bb04136dd525d81186b309be09);
+        
+    
+            var tile_layer_732fa24ddd590ddeea44684930f9d5be = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detect_retina": false, "max_native_zoom": 19, "max_zoom": 19, "min_zoom": 0, "no_wrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+            var mini_map_8accb2f8bed55a20a32f2cbabd65afd6 = new L.Control.MiniMap(
+                tile_layer_732fa24ddd590ddeea44684930f9d5be,
+                {
+  "position": "bottomright",
+  "width": 150,
+  "height": 150,
+  "collapsedWidth": 25,
+  "collapsedHeight": 25,
+  "zoomLevelOffset": -5,
+  "centerFixed": false,
+  "zoomAnimation": false,
+  "toggleDisplay": false,
+  "autoToggleDisplay": false,
+  "minimized": false,
+}
+            );
+            map_714fe1bb04136dd525d81186b309be09.addControl(mini_map_8accb2f8bed55a20a32f2cbabd65afd6);
+        
+</script>
+</html>
